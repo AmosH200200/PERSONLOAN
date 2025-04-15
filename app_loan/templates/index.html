@@ -1,0 +1,454 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content%}
+  <!-- ======= Hero Section ======= -->
+  <section class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">Besoin urgent D'argent ?<br>Vous Etes au Bon endroit.</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="{% url 'procedure' %}" class="btn-book-a-table">Commencer <br>maintenant</a>
+            <a href="" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Regardez la vidéo</span></a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="{% static 'img/loanimg.jpg' %}" class="img-fluid"  style="border-top-left-radius: 50px; border-bottom-right-radius: 50px;" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>A propos</h2>
+          <p> <span>Qui sommes nous ?</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img" data-aos="fade-up" data-aos-delay="150">
+            <div class="call-us position-absolute">
+              <h4>Obtenir jusqu'à $10 000</h4>
+              <p>+229 0165647867</p>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="{% static 'img/abou.jpg' %}" class="img-fluid" alt="">
+                <a href="" class="glightbox play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Pourquoi choisir #nom ?</h3>
+              <p>
+                Notre plateforme de prêt en ligne se distingue par sa simplicité et son accessibilité. Nous offrons un processus entièrement digitalisé, conçu pour vous faire gagner du temps tout en minimisant les contraintes administratives. Que vous soyez un particulier ou un professionnel, nos solutions de financement sont adaptées à vos besoins spécifiques, avec des taux compétitifs et des options de remboursement flexibles. Nous nous engageons à vous accompagner à chaque étape, de la demande initiale jusqu'au versement des fonds, tout en garantissant une transparence totale sur nos offres et nos conditions.
+
+                En choisissant nos services, vous bénéficiez également d'une technologie de pointe qui assure la sécurité de vos données personnelles et de vos transactions. Nous plaçons la satisfaction et la confiance de nos clients au cœur de nos priorités, avec une équipe dédiée disponible pour répondre à toutes vos questions. Faites le choix de la rapidité, de la simplicité et de la fiabilité en optant pour notre plateforme, et concrétisez vos projets en toute sérénité.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Voir plus <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-center">
+            <div class="row gy-4">
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h2>Simple</h2>
+                  <p>Notre plateforme a été conçue pour vous offrir une expérience utilisateur intuitive et un processus de demande de prêt facile à suivre.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h2>Rapide</h2>
+                  <p>Nous traitons vos demandes avec efficacité afin de vous fournir une réponse en un temps record.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h2>Collaboratif</h2>
+                  <p>Nous privilégions des partenariats solides et transparents pour bâtir une relation de confiance durable avec nos clients.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- informations -->
+    <section id="fonction">
+    <div class="container">
+      <div class="row p-3">
+        <div class="col-xl-6">
+          <h3>Notre tarif</h3>
+          <p>Nos tarifs sont conçus pour être transparents et accessibles à tous. Nous offrons des prêts à des taux compétitifs, adaptés à vos besoins spécifiques. Les taux d'intérêt commencent à partir de [X]% et peuvent varier en fonction du type de prêt et de la durée de remboursement choisie. Aucun frais caché n'est appliqué ; les conditions de remboursement sont claires dès le départ. Nous proposons également des options flexibles, permettant de choisir la durée du prêt qui vous convient le mieux. Pour toute question, notre équipe est à votre disposition pour vous fournir un devis personnalisé sans engagement.</p>
+        </div>
+        <div class="col-xl-6">
+          <h3>Approbation</h3>
+          <p>Une fois votre demande de prêt soumise, notre équipe analyse rapidement votre dossier. Vous recevrez une réponse d'approbation dans un délai de 24 à 48 heures, en fonction de la complexité de votre demande. Si votre demande est approuvée, nous vous enverrons une offre de prêt détaillant le montant, le taux d'intérêt, la durée du remboursement et les conditions générales. Vous pourrez alors accepter l'offre et finaliser les formalités pour recevoir vos fonds directement sur votre compte bancaire. Notre processus est rapide, transparent et conçu pour vous offrir une solution de financement adaptée à vos besoins.</p>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projets</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Heures De Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Agents</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+   
+
+         
+
+          
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Testimonials</h2>
+          <p>Les avis de nos clients</p>
+        </div>
+
+        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Grâce à cette plateforme, j'ai obtenu un prêt personnel rapidement pour financer mes études. Le processus était simple, transparent, et l'équipe a été très réactive. Je recommande vivement leurs services 
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="{% static 'img/testimonials/testimonials-1.jpg' %}" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        J'avais besoin d'un prêt d'urgence pour des travaux dans ma maison, et cette solution m'a sauvé la mise. En moins de 48 heures, l'argent était sur mon compte. Je suis impressionné par leur rapidité et leur professionnalisme.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Sara Wilsson</h3>
+                      <h4>Designer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        En tant qu'entrepreneuse, j'avais du mal à trouver des financements adaptés à mon projet. Ici, j'ai trouvé une offre flexible et des conditions claires. Merci pour cette expérience sans stress et pour votre accompagnement !
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        La sécurité de mes données était ma priorité, et j'ai été rassuré dès le début. Tout a été bien expliqué et j'ai pu rembourser mon prêt dans des conditions avantageuses. Un service de qualité et une équipe disponible !
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>John Larson</h3>
+                      <h4>Entrepreneur</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="{% static 'img/testimonials/testimonials-4.jpg' %}" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+   
+
+   
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Commencer</h2>
+          <p>Donnez <span>Votre avis</span> Sur nous</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-4 reservation-img" style="background-image: url(img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Chargement</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Votre avis a été bien enrégistrer. Merci!</div>
+              </div>
+              <div class="text-center"><button type="submit">Envoyer maintenant</button></div>
+            </form>
+          </div><!-- End Reservation Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Avis</h2>
+          <p>Besoin d'aide? <span>Contacter nous</span></p>
+        </div>
+
+        <div class="mb-3">
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-map flex-shrink-0"></i>
+              <div>
+                <h3>Notre adresse</h3>
+                <p>Porto-Novo, Bénin</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Notre email</h3>
+                <p>contact@example.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Télephone</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Heures d'ouvertures</h3>
+                <div><strong>Lun-Sam:</strong> 08H - 20H;
+                  <strong>Dimanche:</strong> Fermé
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
+            </div>
+            <div class="col-xl-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Chargement</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Votre message a été envoyé. Merci!</div>
+          </div>
+          <div class="text-center"><button type="submit">Envoyer le message</button></div>
+        </form><!--End Contact Form -->
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}
+
+  
+
+  

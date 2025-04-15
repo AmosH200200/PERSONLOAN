@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Créer un compte {% endblock  %}
+
+{% block content %}
+
+<div class="container">
+  <div class="col-md-12 mt-5 " style="padding-top: 100px; padding-bottom: 60px;">
+      {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-danger text-center"><strong>{{message}}</strong></div>
+      {% endfor %}
+      {% endif %}
+      <form action="" method="POST" novalidate> {% csrf_token %}         
+          <div class="card">
+              <div class="card-header text-center">
+                  <h5 class="card-title text-center pb-0 fs-4">Inscivez-vous</h5>
+                  <p class="text-center small">C'est parti ! Initiez votre demande </p>          
+              </div>
+                  <div class="card-body">
+                    {{form}}
+                  </div>
+              <div class="card-footer">
+                  <button class="btn btn-primary btn-block form-control mb-2">Créer le compte </button>
+                  <div>J'ai un compte. <a href="{% url 'login-user' %}">Se connecter</a></div>
+              </div>
+                   
+          </div>
+        </form>
+  </div>
+</div>
+
+  
+
+
+
+{% endblock  %}
